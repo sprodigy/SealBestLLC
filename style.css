@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family:calibri,arial;
+	font-size:16pt;
+}
+
+#container {
+	margin: 20px auto 0;
+	max-width: 960px;
+	padding: 0;
+	background: black;
+	border: 10px solid yellow;
+	border-top-right-radius: 100px;
+	position:relative;
+	overflow:auto;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+}
+
+#header {
+	margin: 10px;
+	padding: 20px;
+	background: black;
+	border-top-right-radius: 93px;
+}
+
+#headerTextContainer {
+					margin: 0 0 0 240px;
+}
+
+#headerText {
+	font-size: 2em;
+	color: yellow;
+	margin: 5px auto;
+	width: 300px;
+	text-shadow: 2px 2px #ff0000;
+	
+}
+
+#footer {
+  clear: both;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 25px 0 25px;
+}
+
+div#show {
+background-color:black;
+width:955px;
+height:500px;
+margin:0; padding:2px;
+border:1px solid #black;
+}
+
+div#show table input,  div#show4 table input {
+outline-style:none;
+}
+
+#mainContent {
+	color:#FF0;
+}
+
+#box1 {
+	border:solid;
+	border-color:yellow;
+	background-color:black;
+	color:yellow;
+	width:300px;
+	margin:35px;
+	font-size:25px;
+	float:left;
+}
+
+#box2 {
+	border:solid;
+	border-color:yellow;
+	background-color:black;
+	color:yellow;
+	width:300px;
+	margin:35px;
+	font-size:25px;
+	float:left;
+	padding:0;
+}
+
+/* pushes the page to the full capacity of the viewing area */
+html {height:100%;}
+body {height:100%; margin:0; padding:0;}
+/* prepares the background image to full capacity of the viewing area */
+#bg {position:fixed; top:0; left:0; width:100%; height:100%;}
+/* places the content ontop of the background image */
+#content {position:relative; z-index:1;}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+/* some css fixes for IE browsers */
+html {overflow-y:hidden;}
+body {overflow-y:auto;}
+#bg {position:absolute; z-index:-1;}
+#content {position:static;}
